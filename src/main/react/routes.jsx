@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {Route} from 'react-router-dom';
 
+import Test from './components/test';
+
 export default function Routes() {
 
-  const landing = () => <h1>hello ece welcome home!</h1>;
+  const test = () => <Test/>;
 
   return <div className="app-container">
-    <Route exact path="/" component={landing}/>
+    <Route exact path="/" component={test}/>
   </div>;
 }
 

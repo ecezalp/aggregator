@@ -1,0 +1,1 @@
+export const getMeta = url => `${process.env.META_BASE_URL}?url=${url}`;
