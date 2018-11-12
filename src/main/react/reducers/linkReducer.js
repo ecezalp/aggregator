@@ -1,12 +1,37 @@
 const initialState = {
   links: [
-    "https://aestheticparadaisu.jimdo.com",
-    "https://refactoringui.com/previews/building-your-color-palette/",
-    "http://vihart.com/",
-    "https://theveganstoner.blogspot.com/",
-    "https://www.activism.net/cypherpunk/manifesto.html",
-    "http://whitevinyldesign.com",
-    "https://www.monkeyuser.com/2018/root-cause/",
+    {
+      url: 'https://www.behance.net/gallery/68802783/Henricampelandia',
+      comments: "test"
+    },
+    {
+      url: "https://aestheticparadaisu.jimdo.com",
+      comments: "test"
+    },
+    {
+      url: "https://refactoringui.com/previews/building-your-color-palette/",
+      comments: "test"
+    },
+    {
+      url: "http://vihart.com/",
+      comments: "test"
+    },
+    {
+      url: "https://theveganstoner.blogspot.com/",
+      comments: "test"
+    },
+    {
+      url: "https://www.activism.net/cypherpunk/manifesto.html",
+      comments: "test"
+    },
+    {
+      url: "http://whitevinyldesign.com",
+      comments: "test"
+    },
+    {
+      url: "https://www.monkeyuser.com/2018/root-cause/",
+      comments: "test"
+    },
   ]
 };
 
