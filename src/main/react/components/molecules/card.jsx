@@ -29,6 +29,7 @@ const Card = ({id, image, comments, title, description, url, theme}) => {
     padding: '1vh',
     margin: '5vh 0',
     backgroundColor: theme['main'][0],
+    boxShadow: '0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1)',
   };
   const commentsStyle = {
     backgroundColor: theme['gray'][0],
@@ -41,7 +42,7 @@ const Card = ({id, image, comments, title, description, url, theme}) => {
   };
 
   return <div key={`item-container-${id}`} className="card" style={cardStyle}>
-    <a href={url} target={"_blank"} style={aStyle}>
+    <a href={url} target={"_blank"} style={aStyle} title={url}>
       {image && <img src={image} style={imgStyle}/>}
       <title style={titleStyle}>
         <h2 style={h2Style}>{title}</h2>

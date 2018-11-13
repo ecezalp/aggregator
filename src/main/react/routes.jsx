@@ -3,6 +3,9 @@ import {Route} from 'react-router-dom';
 
 import CardIndex from './components/pages/cardsIndex';
 import {theme1} from "./constants/colors";
+import Navbar from "./components/atoms/navbar";
+
+import squairy_light from '../resources/images/squairy_light.png';
 
 export default function Routes() {
 
@@ -11,12 +14,14 @@ export default function Routes() {
     width: '100vw',
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme1['gray'][30],
+    paddingTop: '7vh',
+    backgroundImage: `url(${squairy_light})`,
   };
 
   const test = () => <CardIndex/>;
 
   return <div className="app-container" style={style}>
+    <Navbar theme={theme1}/>
     <Route exact path="/" component={test}/>
   </div>;
 }

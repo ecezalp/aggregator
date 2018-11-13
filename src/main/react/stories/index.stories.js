@@ -6,8 +6,9 @@ import {linkTo} from '@storybook/addon-links';
 
 import {Welcome} from '@storybook/react/demo';
 
-import Button from '../components/atoms/inputs/button';
+import Button from '../components/atoms/button';
 import {theme1} from '../constants/colors';
+import Navbar from "../components/atoms/navbar";
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')}/>);
 
@@ -28,6 +29,12 @@ storiesOf('Button', module)
         😀😀😀
       </span>
     </Button>
+  ));
+
+
+storiesOf('Navbar', module)
+  .add('navbar', () => (
+    <Navbar theme={theme1}/>
   ));
 
 

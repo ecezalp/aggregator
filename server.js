@@ -7,7 +7,7 @@ const DIST_DIR = path.join(__dirname, "dist"),
   PORT = 3000,
   app = express();
 
-del(['dist/*.js', '!dist/bundle.js']);
+del(['dist/*.js', '!dist/bundle.js', '!dist/bundle.min.js']);
 
 app.use(express.static(DIST_DIR));
 
