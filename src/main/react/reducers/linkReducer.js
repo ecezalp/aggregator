@@ -2,7 +2,9 @@ const initialState = {
   links: [
     {
       url: 'https://wonjunhong.com',
-      comments: "askim I love you big league"},
+      comments: "askim I love you big league"},{
+      url: 'https://i.imgur.com/GS8KkXa.gifv',
+      comments: "What a fantastic scenery"},
     {
       url: 'https://www.behance.net/gallery/68802783/Henricampelandia',
       comments: "Nam cras primis. Ullamcorper donec quis dui lobortis mauris, nec vel nisl facilisis non, pretium facilisi justo per vestibulum leo, suscipit placerat magna nulla orci nibh semper, tristique nec litora aenean ut. Tortor facilisis leo laoreet tellus molestie. Sit nec a, fusce lacus tellus,"

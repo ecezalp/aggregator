@@ -18,11 +18,11 @@ export default function Routes() {
     backgroundImage: `url(${squairy_light})`,
   };
 
-  const test = () => <CardIndex/>;
+  const test = ({match}) => <CardIndex username={match.params.username}/>;
 
   return <div className="app-container" style={style}>
     <Navbar theme={theme1}/>
-    <Route exact path="/" component={test}/>
+    <Route exact path="/u/:username" component={test}/>
   </div>;
 }
 

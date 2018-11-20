@@ -34,6 +34,7 @@ class CardsIndex extends React.Component {
     };
 
     return <div className={'cards-index-page'} style={style}>
+      <h1>{this.props.username}</h1>
       {this.state.info.map(this.renderItem)}
     </div>
   }
